@@ -1,11 +1,12 @@
 <script>
+    import { Link } from 'svelte-routing'
+      let headingText = 'Data Visualization Bar';
 
-    export let name;
         let uConnectTeam = [
             {departmentName:"Web Development", faculty:50},
             {departmentName:"UI UX", faculty:25},
             {departmentName:"Degital Marketing", faculty:19},
-            {departmentName:"Business Development and Other Staff", faculty:75},
+            {departmentName:"Business Development and Other Staff", faculty:100},
             {departmentName:"USDP", faculty:35},
             {departmentName:"Instrunctional Staff", faculty:35},
     ]
@@ -15,13 +16,21 @@
     
     <style>
         svg{
-            border: 1px solid gray;
             width: 100%;
             height: 500px;
         }
+        h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #9370db; /* Light Purple color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    }
+
     </style>
-    
-    <h1>Bar in {name}!</h1>
+    <Link to="/">Go to Home</Link>
+    <h1 style="color: #9370db; /* Light Purple color */ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */">
+        {headingText}
+      </h1>
     
     <svg>
        

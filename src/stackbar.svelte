@@ -1,8 +1,9 @@
 <script>
     import { onMount } from 'svelte';
+    import { Link } from "svelte-routing"
     import Chart from 'chart.js/auto';
   
-    let chart; // Reference to the chart instance
+    let chart; 
   
     let departmentData = [
       { department: 'IT Services', income: 500000 },
@@ -11,8 +12,7 @@
       { department: 'Networking', income: 200000 },
       { department: 'Networking', income: 200000 },
       { department: 'Networking', income: 200000 },
-      { department: 'Networking', income: 200000 },
-      // Add more departments and income data as needed
+      { department: 'Networking', income: 200000 }
     ];
   
     onMount(() => {
@@ -26,7 +26,7 @@
             {
               label: 'Annual Income',
               data: departmentData.map(entry => entry.income),
-              backgroundColor: '#3498db', // Blue color for the bars
+              backgroundColor: '#3498db', 
             },
           ],
         },
@@ -60,6 +60,7 @@
   <style>
    
   </style>
+<Link to="/">Go to Home</Link>
   
   <canvas id="incomeChart"></canvas>
   

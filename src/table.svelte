@@ -1,4 +1,6 @@
 <script>
+
+    import { Link } from "svelte-routing"
     // Assuming you have an array of faculty objects
     let facultyList = [
       { name: "John Doe", designation: "Professor", department: "Computer Science" },
@@ -31,6 +33,7 @@
       background-color: #f2f2f2;
     }
   </style>
+<Link to="/">Go to Home</Link>
   
   <table>
     <thead>

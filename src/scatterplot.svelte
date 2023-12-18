@@ -1,4 +1,5 @@
 <script>
+import { Link } from "svelte-routing"
 import {scaleLinear} from "d3-scale"
 import { extent } from "d3-array";
 
@@ -46,7 +47,9 @@ const height = 600;
 {#await data}
 <p>loading....</p>
 {:then iris}
+<Link to="/">Go to Home</Link>
 <p>Loaded :) {iris.json.length}</p>
+
 
 <svg {height} {width}>
     {#each iris.json as item}
