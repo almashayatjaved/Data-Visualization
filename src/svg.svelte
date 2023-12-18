@@ -3,11 +3,14 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>SVG in {name}!</h1>
+	<svg>
+
+	</svg>
 </main>
 
 <style>
+	
 	main {
 		text-align: center;
 		padding: 1em;
@@ -26,5 +29,10 @@
 		main {
 			max-width: none;
 		}
+	}
+	svg{
+		border: 1px solid gray;
+		width: 50%;
+		height: 30vh;
 	}
 </style>
