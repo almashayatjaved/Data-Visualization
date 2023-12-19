@@ -48,8 +48,6 @@ const height = 600;
 <p>loading....</p>
 {:then iris}
 <Link to="/">Go to Home</Link>
-<p>Loaded :) {iris.json.length}</p>
-
 
 <svg {height} {width}>
     {#each iris.json as item}
