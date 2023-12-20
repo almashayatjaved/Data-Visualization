@@ -9,6 +9,8 @@
 	import StackBar from './stackbar.svelte';
 	import Histogram from './histogram.svelte';
     import Heatmap from './heatmap.svelte';
+    import TreeMap from './treemap.svelte';
+  import Treemap from './treemap.svelte';
   </script>
   
   <Router>
@@ -20,5 +22,6 @@
     <Route path="/stackbar" component={StackBar} />
     <Route path="/histogram" component={Histogram} />
     <Route path="/heatmap" component={Heatmap} />
+    <Route path="/treemap" component={Treemap} />
   </Router>
   

@@ -7,9 +7,9 @@
     let data = [10, 20, 15, 25, 30, 18, 22, 16, 28, 35, 40, 32];
   
     onMount(() => {
-      const ctx = document.getElementById('histogramChart').getContext('2d');
+      const histogram = document.getElementById('histogramChart').getContext('2d');
   
-      chart = new Chart(ctx, {
+      chart = new Chart(histogram, {
         type: 'bar',
         data: {
           labels: data.map((_, index) => index + 1), // Labels as 1, 2, 3, ...

@@ -11,6 +11,7 @@
     { text: 'Go to StackBar', link: '/stackbar' },
     { text: 'Go to Histogram', link: '/histogram' },
     { text: 'Go to HeatMap', link: '/heatmap' },
+    { text: 'Go to TreeMap', link: '/treemap' },
   ];
 </script>
 
