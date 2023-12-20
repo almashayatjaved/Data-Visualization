@@ -32,9 +32,8 @@
 	
 	main {
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		max-width: 100%;
+		/* margin: 0 auto; */
 	}
 
 	h1 {
@@ -44,11 +43,6 @@
 		font-weight: 100;
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 	svg{
 		border: 1px solid gray;
 		width: 50%;
@@ -58,6 +52,7 @@
     background-color: #9370db; /* Light Purple background */
     padding: 20px;
     text-align: center;
+	width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
   }
 
