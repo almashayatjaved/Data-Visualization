@@ -10,7 +10,8 @@
 	import Histogram from './histogram.svelte';
     import Heatmap from './heatmap.svelte';
     import TreeMap from './treemap.svelte';
-  import Treemap from './treemap.svelte';
+  import Populationpyramids from './populationpyramids.svelte';
+  import Verticalpyramids from './verticalpyramids.svelte';
   </script>
   
   <Router>
@@ -22,6 +23,8 @@
     <Route path="/stackbar" component={StackBar} />
     <Route path="/histogram" component={Histogram} />
     <Route path="/heatmap" component={Heatmap} />
-    <Route path="/treemap" component={Treemap} />
+    <Route path="/treemap" component={TreeMap} />
+    <Route path="/populationpyramids" component={Populationpyramids} />
+    <Route path="/verticalpyramids" component={Verticalpyramids} />
   </Router>
   
