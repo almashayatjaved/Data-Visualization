@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { Link } from "svelte-routing"
     import * as d3 from 'd3';
   
     // Example hierarchical data
@@ -75,6 +76,6 @@
     }
   </style>
   
-  <!-- Container for the treemap -->
+<Link to="/">Go to Home</Link>
   <div id="treemapContainer"></div>
   

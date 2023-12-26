@@ -1,76 +1,57 @@
-<script lang="ts">
-  import { scaleLinear, scaleOrdinal } from "d3-scale";
-  import { extent } from "d3-array";
+<script>
+    import { onMount } from 'svelte';
+    import { Link } from "svelte-routing"
+    import * as d3 from 'd3';
+  
+    let data = [
+      [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+      [90, 80, 70, 60, 50, 40, 30, 20, 10, 0],
+      [50, 55, 60, 65, 70, 75, 80, 85, 90, 95],
+      [30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+      [70, 65, 60, 55, 50, 45, 40, 35, 30, 25],
+      [20, 25, 30, 35, 40, 45, 50, 55, 60, 65],
+      [80, 75, 70, 65, 60, 55, 50, 45, 40, 35],
+      [15, 25, 35, 45, 55, 65, 75, 85, 95, 100],
+      [40, 50, 60, 70, 80, 90, 100, 90, 80, 70],
+      [60, 70, 80, 90, 100, 90, 80, 70, 60, 50],
+    ];
+  
+    onMount(() => {
+      const width = 800;
+      const height = 400;
+  
+      const svg = d3.select('#heatmapContainer')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+  
+      const colorScale = d3.scaleLinear()
+        .domain([0, d3.max(data.flat())])
+        .range(['white', 'steelblue']);
+  
+      svg.selectAll('rect')
+        .data(data.flat())
+        .enter()
+        .append('rect')
+        .attr('x', (d, i) => (i % data[0].length) * (width / data[0].length))
+        .attr('y', (d, i) => Math.floor(i / data[0].length) * (height / data.length))
+        .attr('width', width / data[0].length - 1)
+        .attr('height', height / data.length - 1)
+        .style('fill', d => colorScale(d));
+    });
+  </script>
+  
+  <style>
+    #heatmapContainer {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ecf0f1; 
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 
-  const height = 600;
-  const width = 600;
-  const buffer = 10;
-  const colors = ["red", "green", "blue"];
-  const axisSpace = 50;
-
-  async function loadData() {
-    let data = await fetch("/data/iris.json");
-    let json = (await data.json());
-
-    let xExtent = extent(json, (d) => d.petalLength);
-    let yExtent = extent(json, (d) => d.petalWidth);
-
-    let species = new Set(json.map((d) => d.species));
-
-    let xScale = scaleLinear()
-      .domain(xExtent)
-      .range([buffer + axisSpace, width - buffer]);
-    let yScale = scaleLinear()
-      .domain(yExtent)
-      .range([height - buffer - axisSpace, buffer]);
-
-    let colorScale = scaleOrdinal().domain(Array.from(species)).range(colors);
-
-    return {
-      data: json,
-      xScale,
-      yScale,
-      colorScale,
-      species: Array.from(species),
-    };
-  }
-
-  let data = loadData();
-</script>
-
-{#await data}
-  <p>Loading...</p>
-{:then iris}
-  <svg {height} {width}>
-    {#each iris.data as item}
-      <circle
-        r="3"
-        cx={iris.xScale(item.petalLength)}
-        cy={iris.yScale(item.petalWidth)}
-        fill={iris.colorScale(item.species)} />
-    {/each}
-
-    {#each iris.xScale.ticks(5) as tick}
-      <g transform={`translate(${iris.xScale(tick)} ${height - 20})`}>
-        <line y1="-5" y2="0" stroke="black" />
-        <text y="20" text-anchor="middle">{tick}</text>
-      </g>
-    {/each}
-
-    {#each iris.yScale.ticks(5) as tick}
-      <g transform={`translate(0 ${iris.yScale(tick)})`}>
-        <line x1="35" x2="40" stroke="black" />
-        <text x="30" dominant-baseline="middle" text-anchor="end">{tick}</text>
-      </g>
-    {/each}
-
-    <g transform={`translate(${width - 100}, ${height - 100})`}>
-      {#each iris.species as species, i}
-        <g transform={`translate(0 ${i * 20})`}>
-          <rect height="10" width="10" fill={iris.colorScale(species)} />
-          <text dominant-baseline="middle" y="5" x="20">{species}</text>
-        </g>
-      {/each}
-    </g>
-  </svg>
-{/await}
+<Link to="/">Go to Home</Link>
+  
+  <div id="heatmapContainer"></div>
+  

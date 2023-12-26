@@ -12,6 +12,8 @@
     { text: 'Go to Histogram', link: '/histogram' },
     { text: 'Go to HeatMap', link: '/heatmap' },
     { text: 'Go to TreeMap', link: '/treemap' },
+    { text: 'Go to PopulationPyramids', link: '/populationpyramids' },
+    { text: 'Go to VerticalPyramids', link: '/verticalpyramids' },
   ];
 </script>
 
