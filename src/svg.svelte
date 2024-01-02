@@ -1,7 +1,7 @@
 <script>
-	
+	import 'bootstrap/dist/css/bootstrap.min.css';
+
 	import { Link } from "svelte-routing"
- 
 
 	let navigationLinks = [
     { text: 'Go to Bar', link: '/bar' },
@@ -17,14 +17,16 @@
   ];
 </script>
 
-<main>
+<main class="text-center">
 
 	<div class="navbar">
 		{#each navigationLinks as { text, link }}
-		  <Link to={link} style="color: #fff; margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;" class="nav-link">{text}</Link>
+		  <Link to={link} class="text-[#fff] nav-link" style=" margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;">{text}</Link>
 		{/each}
 	  </div>
 	<h1>Data Visualization!</h1>
+
+ 
 	<!-- <svg>
 
 	</svg> -->
@@ -33,7 +35,7 @@
 <style>
 	
 	main {
-		text-align: center;
+		/* text-align: center; */
 		max-width: 100%;
 		/* margin: 0 auto; */
 	}
