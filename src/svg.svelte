@@ -19,12 +19,27 @@
 
 <main class="text-center">
 
-	<div class="navbar">
+	<div class="navbar bg-[#1a9496] border rounded " style="height: 10vh;">
 		{#each navigationLinks as { text, link }}
-		  <Link to={link} class="text-[#fff] nav-link" style=" margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;">{text}</Link>
+		  <Link to={link} class="text-light nav-link" style="font-weight:bold; margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;">{text}</Link>
 		{/each}
 	  </div>
-	<h1>Data Visualization!</h1>
+	<div style="height: 75vh; background-color:#20354c" class="witw-100 d-flex">
+		<div class=" w-50 d-flex flex-column align-items-center justify-content-center">
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src="/images/23.jpg" class=" rounded-circle" style="height: 60%; width: 45%" alt="my image">
+		</div>
+		<div class="w-50 d-flex text-light  flex-column align-items-center justify-content-center">
+			<h1 class="font-sans-serif text-light fs-3" style="font-weight:bold">Meet Almas Javed</h1>
+			<p>Data Visualization Developer</p>
+		</div>
+	</div>
+	<footer class="border" style="height: 13vh;">
+		<div>Explore My work and Contact me</div>
+		<div>
+			
+		</div>
+	</footer>
 
  
 	<!-- <svg>
@@ -53,7 +68,7 @@
 		height: 30vh;
 	}
 	.navbar {
-    background-color: #9370db; /* Light Purple background */
+    background-color: #1a9496; /* Light Purple background */
     padding: 20px;
     text-align: center;
 	width: 100%;
