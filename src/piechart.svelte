@@ -37,11 +37,21 @@
   </script>
   
   <style>
-    
+    main{
+      background-color: #20354c; /* Light Purple background */
+      height: 90vh;
+    }
+    canvas{
+      padding: 60px;
+      color:white;
+      
+    }
   </style>
 
-<Link to="/">Go to Home</Link>
-  
-  <canvas id="departmentsChart"></canvas>
+
+<button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
+<main>
+    <canvas id="departmentsChart"></canvas>
+  </main>
 
   

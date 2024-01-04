@@ -33,7 +33,7 @@
       background-color: #f2f2f2;
     }
   </style>
-<Link to="/">Go to Home</Link>
+<button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
   
   <table>
     <thead>

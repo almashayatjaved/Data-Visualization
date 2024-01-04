@@ -47,7 +47,7 @@ const height = 600;
 {#await data}
 <p>loading....</p>
 {:then iris}
-<Link to="/">Go to Home</Link>
+<button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
 
 <svg {height} {width}>
     {#each iris.json as item}

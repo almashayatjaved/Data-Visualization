@@ -27,8 +27,8 @@
     }
 
     </style>
-    <Link to="/">Go to Home</Link>
-    <h1 style="color: #9370db; /* Light Purple color */ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */">
+<button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
+<h1 style="color: #9370db; /* Light Purple color */ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */">
         {headingText}
       </h1>
     

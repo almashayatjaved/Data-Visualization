@@ -46,5 +46,7 @@
   
   </style>
   
+  <button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
+
   <canvas id="histogramChart"></canvas>
   
