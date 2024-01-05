@@ -60,7 +60,7 @@
         <div class="col-md-6">
           <p class="mb-0">Follow me on GitHub:</p>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/almashayatjaved"
             target="_blank"
             class="text-dark"
           >
@@ -74,7 +74,7 @@
         </div>
         <div class="col-md-6 contact-info">
           <p class="mb-0">Contact me via email:</p>
-          <a href="mailto:your.email@gmail.com" class="text-dark">
+          <a href="mailto:radientDev03@gmail.com" class="text-dark">
             <img
               class="w-35"
               style="height: 30px;"
