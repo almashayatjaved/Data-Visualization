@@ -1,0 +1,4 @@
+Files in this folder are the components which are displayed on the app as the data visualiztion component and description
+
+
+These components get component and are whole detailed components themselves
