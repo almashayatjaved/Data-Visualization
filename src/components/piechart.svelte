@@ -53,11 +53,6 @@
       background-color: #20354c; /* Light Purple background */
       height: 90vh;
     }
-    canvas{
-      padding: 60px;
-      color:white;
-      
-    }
     .navbar{
 
     background-color: #1a9496; /* Light Purple background */
@@ -67,6 +62,11 @@
     /* margin-inline: 50px; */
     background-color: #20364c;
     }
+    canvas{
+      padding: 60px;
+      color:white;
+      
+    }
   </style>
 
 <div class="navbar bg-[#1a9496] border rounded " style="height: 10vh;">
@@ -75,6 +75,6 @@
 </div>
 <main>
     <canvas id="departmentsChart"></canvas>
-  </main>
+</main>
 
   
