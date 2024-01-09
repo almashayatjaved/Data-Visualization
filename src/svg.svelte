@@ -1,7 +1,14 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
+  import TableComponent from "./wholeComp/Table.svelte"
+  import BarComponent from "./wholeComp/Bar.svelte"
+  import HeatMapComponent from "./wholeComp/HeatMap.svelte"
+  import HistogramComponent from "./wholeComp/Histogram.svelte"
+  import PieChartComponent from "./wholeComp/PieChart.svelte"
+  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte"
 
   import { Link } from "svelte-routing";
+
 
   let navigationLinks = [
     { text: "Go to Bar", link: "/bar" },
@@ -53,6 +60,24 @@
         accessible and insightful for a wide audience.
       </p>
     </div>
+  </div>
+  <div>
+    <TableComponent/>
+  </div>
+  <div>
+    <BarComponent />
+  </div>
+  <div>
+    <HeatMapComponent />
+  </div>
+  <div>
+    <HistogramComponent />
+  </div>
+  <div>
+    <PieChartComponent />
+  </div>
+  <div>
+    <PopulationPyramidComponent />
   </div>
   <footer class="text-center">
     <div class="container footer-content">

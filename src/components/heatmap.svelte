@@ -68,15 +68,6 @@
   });
 </script>
 
-<div class="navbar bg-[#1a9496] border rounded" style="height: 10vh;">
-  <button
-    type="button"
-    class="btn btn-primary rounded-5 btn-lg mx-20 me-5 ms-5 p-2 border-0"
-  >
-    <a class="text-light text-decoration-none" href="/">Home</a>
-  </button>
-</div>
-
 <main>
   <div id="explanation">
     <p>
@@ -97,22 +88,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  main {
-    background-color: #20354c; /* Light Purple background */
-    height: 90vh;
-    display: flex;
-    flex-direction: column; /* Add column layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-
-  .navbar {
-    background-color: #1a9496; /* Light Purple background */
-  }
-
-  button {
-    background-color: #20364c;
-  }
 
   #explanation {
     color: #fff; /* White text color */
