@@ -11,7 +11,7 @@
 <main class="container mt-5">
   <div class="row d-flex flex-row  justify-content-center align-items-center">
     <!-- Left section for description -->
-    <div class="col-md-6 ">
+    <div class="col-md-5 ">
       <div class="card background border-0 textColor">
         <div class="card-body">
           <h3 class="card-title">Table in Data visualization</h3>
@@ -21,8 +21,8 @@
     </div>
 
     <!-- Right section for image -->
-    <div class="col-md-6">
-      <div class="rounded-2">
+    <div class="col-md-7">
+      <div class="">
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <!-- <img src="/images/table.png" class="card-img-top" alt="Image" /> -->
         <Table />
@@ -32,9 +32,9 @@
 </main>
 
 <style>
-  .background {
+  /* .background {
     background-color: #06133d;
-  }
+  } */
   .textColor{
     color:#8090c4
   }

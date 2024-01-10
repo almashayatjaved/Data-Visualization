@@ -154,7 +154,7 @@
   .contact-info {
     margin-top: 10px; /* Add margin at the top of the contact info */
   }
-  .background {
+  /* .background {
     background-color: #06133d;
-  }
+  } */
 </style>

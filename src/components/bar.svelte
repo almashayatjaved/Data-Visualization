@@ -40,7 +40,7 @@
 <style>
   svg {
     width: 100%;
-    height: 500px;
+    height: 340px;
   }
 
 </style>

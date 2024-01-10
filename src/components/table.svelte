@@ -68,7 +68,6 @@
     /* border-collapse: collapse; */
     width: 100%;
     border: none;
-    --bs-card-bg:none
   }
 
   th,
@@ -79,10 +78,10 @@
   }
 
   th {
-    background-color: #536f8c;
+    background-color: #8c8c8c;
   }
   tbody {
-    background-color: #5a5d67;
-    color: #759fd4;
+    background-color: #e5e5e5;
+    /* color: #759fd4; */
   }
 </style>

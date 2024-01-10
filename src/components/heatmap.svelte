@@ -69,12 +69,6 @@
 </script>
 
 <main>
-  <div id="explanation">
-    <p>
-      This heatmap represents sales made by employees in different months of the
-      year.
-    </p>
-  </div>
   <div id="heatmapContainer"></div>
 </main>
 
@@ -82,15 +76,10 @@
   #heatmapContainer {
     max-width: 800px;
     margin: auto; /* Center horizontally */
-    margin-top: 50px; /* Adjust top margin for vertical centering */
+    /* margin-top: 30px; Adjust top margin for vertical centering */
     background-color: #ecf0f1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-
-  #explanation {
-    color: #fff; /* White text color */
-    margin-bottom: 20px; /* Adjust bottom margin as needed */
-  }
 </style>
