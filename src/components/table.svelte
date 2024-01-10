@@ -65,13 +65,15 @@
 <style>
   /* Add your styling here */
   table {
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     width: 100%;
+    border: none;
+    --bs-card-bg:none
   }
 
   th,
   td {
-    border: 1px solid #7a7a7a;
+    border: 1px solid #06133d36;
     padding: 8px;
     text-align: left;
   }
@@ -80,6 +82,7 @@
     background-color: #536f8c;
   }
   tbody {
-    background-color: #688bb0;
+    background-color: #5a5d67;
+    color: #759fd4;
   }
 </style>

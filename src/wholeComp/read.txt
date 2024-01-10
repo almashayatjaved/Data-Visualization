@@ -2,3 +2,25 @@ Files in this folder are the components which are displayed on the app as the da
 
 
 These components get component and are whole detailed components themselves
+
+<main class="container mt-5">
+    <div class="row d-flex flex-row justify-content-center align-items-center">
+      <!-- Left section for description -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Description</h3>
+            <p class="card-text">{description}</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right section for image -->
+      <div class="col-md-6">
+        <div class="card">
+          <!-- svelte-ignore a11y-img-redundant-alt -->
+          <img src="/images/table.png" class="card-img-top" alt="Image" />
+        </div>
+      </div>
+    </div>
+  </main>
