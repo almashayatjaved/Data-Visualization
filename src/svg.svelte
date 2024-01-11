@@ -6,8 +6,12 @@
   import HistogramComponent from "./wholeComp/Histogram.svelte"
   import PieChartComponent from "./wholeComp/PieChart.svelte"
   import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte"
+  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte"
+  import StackbarComponent from './wholeComp/Stackbar.svelte'
+  import TreeMaapComponent from './wholeComp/TreeMaap.svelte'
 
   import { Link } from "svelte-routing";
+  import Stackbar from "./components/stackbar.svelte";
 
 
   let navigationLinks = [
@@ -78,6 +82,15 @@
   </div>
   <div>
     <PopulationPyramidComponent />
+  </div>
+  <div>
+    <ScatterplotComponent />
+  </div>
+  <div>
+    <StackbarComponent />
+  </div>
+  <div>
+    <TreeMaapComponent />
   </div>
   <footer class="text-center">
     <div class="container footer-content">

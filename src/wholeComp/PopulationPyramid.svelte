@@ -12,16 +12,16 @@
         <!-- Left section for description -->
         
         <div class="col-md-8">
-          <div class="card">
+          <div class="">
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <!-- <img src="/images/table.png" class="card-img-top" alt="Image" /> -->
             <PopulationPyramid />
           </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
+            <div class="textColor">
                 <div class="card-body">
-                    <h3 class="card-title">Table in Data visualization</h3>
+                    <h3 class="card-title">PopulationPyramid in Data visualization</h3>
                     <p class="card-text">{description}</p>
                 </div>
             </div>
@@ -32,5 +32,8 @@
     </main>
     
     <style>
+           .textColor{
+    color:#8090c4
+  }
     </style>
     

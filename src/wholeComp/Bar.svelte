@@ -20,7 +20,7 @@
     <div class="col-md-6">
       <div class="textColor">
         <div class="card-body">
-          <h3 class="card-title">Table in Data visualization</h3>
+          <h3 class="card-title">Bars in Data visualization</h3>
           <p class="card-text">{description}</p>
         </div>
       </div>
