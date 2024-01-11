@@ -1,7 +1,18 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
+  import TableComponent from "./wholeComp/Table.svelte"
+  import BarComponent from "./wholeComp/Bar.svelte"
+  import HeatMapComponent from "./wholeComp/HeatMap.svelte"
+  import HistogramComponent from "./wholeComp/Histogram.svelte"
+  import PieChartComponent from "./wholeComp/PieChart.svelte"
+  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte"
+  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte"
+  import StackbarComponent from './wholeComp/Stackbar.svelte'
+  import TreeMaapComponent from './wholeComp/TreeMaap.svelte'
 
   import { Link } from "svelte-routing";
+  import Stackbar from "./components/stackbar.svelte";
+
 
   let navigationLinks = [
     { text: "Go to Bar", link: "/bar" },
@@ -53,6 +64,33 @@
         accessible and insightful for a wide audience.
       </p>
     </div>
+  </div>
+  <div class="background p-5">
+    <TableComponent/>
+  </div>
+  <div>
+    <BarComponent />
+  </div>
+  <div>
+    <HeatMapComponent />
+  </div>
+  <div>
+    <HistogramComponent />
+  </div>
+  <div>
+    <PieChartComponent />
+  </div>
+  <div>
+    <PopulationPyramidComponent />
+  </div>
+  <div>
+    <ScatterplotComponent />
+  </div>
+  <div>
+    <StackbarComponent />
+  </div>
+  <div>
+    <TreeMaapComponent />
   </div>
   <footer class="text-center">
     <div class="container footer-content">
@@ -129,4 +167,7 @@
   .contact-info {
     margin-top: 10px; /* Add margin at the top of the contact info */
   }
+  /* .background {
+    background-color: #06133d;
+  } */
 </style>

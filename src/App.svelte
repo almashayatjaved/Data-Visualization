@@ -1,16 +1,16 @@
 <script>
   import { Router, Route } from "svelte-routing";
   import SVG from "./svg.svelte";
-  import Bar from "./bar.svelte";
-  import Scatterplot from "./scatterplot.svelte";
-  import Table from "./table.svelte";
-  import Pie from "./piechart.svelte";
-  import StackBar from "./stackbar.svelte";
-  import Histogram from "./histogram.svelte";
-  import Heatmap from "./heatmap.svelte";
-  import TreeMap from "./treemap.svelte";
-  import Populationpyramids from "./populationpyramids.svelte";
-  import Verticalpyramids from "./verticalpyramids.svelte";
+  import Bar from "./components/bar.svelte";
+  import Scatterplot from "./components/scatterplot.svelte";
+  import Table from "./components/table.svelte";
+  import Pie from "./components/piechart.svelte";
+  import StackBar from "./components/stackbar.svelte";
+  import Histogram from "./components/histogram.svelte";
+  import Heatmap from "./components//heatmap.svelte";
+  import TreeMap from "./components/treemap.svelte";
+  import Populationpyramids from "./components//populationpyramids.svelte";
+  import Verticalpyramids from "./components/verticalpyramids.svelte";
 </script>
 
 <Router>

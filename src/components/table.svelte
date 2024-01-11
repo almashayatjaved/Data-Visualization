@@ -43,14 +43,6 @@
   ];
 </script>
 
-<div class="navbar bg-[#1a9496] border rounded" style="height: 10vh;">
-  <button
-    type="button"
-    class="btn btn-primary rounded-5 btn-lg mx-20 me-5 ms-5 p-2 border-0"
-    ><a class="text-light text-decoration-none" href="/">Home</a></button
-  >
-</div>
-<main>
   <table>
     <thead>
       <tr>
@@ -69,42 +61,27 @@
       {/each}
     </tbody>
   </table>
-</main>
 
 <style>
   /* Add your styling here */
   table {
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     width: 100%;
+    border: none;
   }
 
   th,
   td {
-    border: 1px solid #7a7a7a;
+    border: 1px solid #06133d36;
     padding: 8px;
     text-align: left;
   }
 
   th {
-    background-color: #536f8c;
+    background-color: #8c8c8c;
   }
   tbody {
-    background-color: #688bb0;
-  }
-
-  main {
-    height: 60vh;
-     /* Light Purple background */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-  }
-  .navbar {
-    background-color: #1a9496; /* Light Purple background */
-  }
-  button {
-    /* padding: 10px; */
-    /* margin-inline: 50px; */
-    background-color: #20364c;
+    background-color: #e5e5e5;
+    /* color: #759fd4; */
   }
 </style>
