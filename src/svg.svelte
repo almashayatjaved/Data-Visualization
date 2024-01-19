@@ -9,9 +9,9 @@
   import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte"
   import StackbarComponent from './wholeComp/Stackbar.svelte'
   import TreeMaapComponent from './wholeComp/TreeMaap.svelte'
+  import VerticalPyramidComponent from './wholeComp/VerticalPyramid.svelte'
 
   import { Link } from "svelte-routing";
-  import Stackbar from "./components/stackbar.svelte";
 
 
   let navigationLinks = [
@@ -91,6 +91,9 @@
   </div>
   <div>
     <TreeMaapComponent />
+  </div>
+  <div>
+    <VerticalPyramidComponent />sadsad
   </div>
   <footer class="text-center">
     <div class="container footer-content">

@@ -27,7 +27,7 @@
     ];
   
     onMount(() => {
-      const width = 400;
+      const width = 600;
       const height = 400;
       const margin = { top: 20, right: 20, bottom: 20, left: 20 };
   
@@ -78,15 +78,11 @@
     /* Container styling */
     #pyramidContainer {
       max-width: 600px;
-      margin: 20px auto;
-      background-color: #ecf0f1; /* Light gray background */
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid gray;
     }
   </style>
   
   <!-- Container for the vertical population pyramid -->
-  <button type="button" class="btn btn-primary rounded-5 btn-lg my-2"><a class="text-light text-decoration-none" href="/">Go to Home</a></button>
 
   <div id="pyramidContainer"></div>
   
