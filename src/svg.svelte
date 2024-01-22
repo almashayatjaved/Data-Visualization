@@ -1,18 +1,17 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
-  import TableComponent from "./wholeComp/Table.svelte"
-  import BarComponent from "./wholeComp/Bar.svelte"
-  import HeatMapComponent from "./wholeComp/HeatMap.svelte"
-  import HistogramComponent from "./wholeComp/Histogram.svelte"
-  import PieChartComponent from "./wholeComp/PieChart.svelte"
-  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte"
-  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte"
-  import StackbarComponent from './wholeComp/Stackbar.svelte'
-  import TreeMaapComponent from './wholeComp/TreeMaap.svelte'
-  import VerticalPyramidComponent from './wholeComp/VerticalPyramid.svelte'
+  import TableComponent from "./wholeComp/Table.svelte";
+  import BarComponent from "./wholeComp/Bar.svelte";
+  import HeatMapComponent from "./wholeComp/HeatMap.svelte";
+  import HistogramComponent from "./wholeComp/Histogram.svelte";
+  import PieChartComponent from "./wholeComp/PieChart.svelte";
+  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte";
+  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte";
+  import StackbarComponent from "./wholeComp/Stackbar.svelte";
+  import TreeMaapComponent from "./wholeComp/TreeMaap.svelte";
+  import VerticalPyramidComponent from "./wholeComp/VerticalPyramid.svelte";
 
   import { Link } from "svelte-routing";
-
 
   let navigationLinks = [
     { text: "Go to Bar", link: "/bar" },
@@ -29,7 +28,10 @@
 </script>
 
 <main class="text-center">
-  <div class="navbar bg-[#1a9496] text-505F98  border rounded" style="height: 10vh;">
+  <div
+    class="navbar bg-[#1a9496] text-505F98 border rounded"
+    style="height: 10vh;"
+  >
     {#each navigationLinks as { text, link }}
       <Link
         to={link}
@@ -43,19 +45,24 @@
     <div
       class="w-60 lh-lg d-flex text-light flex-column align-items-center justify-content-center"
     >
-      <h1 class="font-sans-serif text-28267d fs-3" style="font-weight:bold">
-        Meet Almas Javed
-      </h1>
-      <p class="w-50">
-        Passionate about transforming complex datasets into compelling visual
-        narratives. Armed with expertise in
-        data analysis and visualization tools, I bring data to life, making it
-        accessible and insightful for a wide audience.
-      </p>
+      <div class="d-flex flex-column align-items-start w-50 border ">
+        <h1 class="font-sans-serif text-28267d fs-3" style="font-weight:bold">
+          Meet Almas Javed
+        </h1>
+        <p class="w-50 text-start">
+          Passionate about transforming complex datasets into compelling visual
+          narratives. Armed with expertise in data analysis and visualization
+          tools, I bring data to life, making it accessible and insightful for a
+          wide audience.
+        </p>
+        <button class="border border-0 text-light bg-fffff px-3"
+          >Check out Data Visualisation</button
+        >
+      </div>
     </div>
   </div>
   <div class="background p-5">
-    <TableComponent/>
+    <TableComponent />
   </div>
   <div>
     <BarComponent />
@@ -128,8 +135,8 @@
     max-width: 100%;
     /* margin: 0 auto; */
   }
-  
-  main .home{
+
+  main .home {
     background-image: url("/images/designer_1.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -142,8 +149,8 @@
     font-size: 4em;
     font-weight: 100;
   }
-  p{
-    color: #505F98;
+  p {
+    color: #505f98;
   }
 
   svg {
@@ -157,6 +164,9 @@
     text-align: center;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  button {
+    background-color: #141719;
   }
   footer {
     background-color: #f8f9fa; /* Light background color */
