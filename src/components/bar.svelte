@@ -26,10 +26,10 @@
       {#each uConnectTeam as department, i}
         <g transform={`translate(150 ${i * 25})`}>
           <rect fill="#afd1eb" height="20" width={department.faculty + 50} />
-          <text text-anchor="end" dominant-baseline="start" style="fill: black;" y="20" x="-15"
+          <text text-anchor="end" dominant-baseline="start" style="fill: #8090c4;" y="20" x="-15"
             >{department.departmentName}</text
           >
-          <text dominant-baseline="start" y="20" style="fill: black;" x={department.faculty + 60}
+          <text dominant-baseline="start" y="20" style="fill: #8090c4;" x={department.faculty + 60}
             >{department.faculty} Members</text
           >
         </g>

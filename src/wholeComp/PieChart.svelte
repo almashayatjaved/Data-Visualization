@@ -3,8 +3,7 @@
     
       let description;
     
-      description ="A heatmap in data visualization is a graphical representation that uses color to depict the magnitude of values in a matrix."
-        
+      description ="A pie chart is a circular statistical graphic that is divided into slices to illustrate numerical proportions. Each slice represents a proportion of the whole, with the size of each slice corresponding to the percentage or absolute value of the data it represents. Pie charts are commonly used to visualize the distribution of categories in a dataset and are effective for conveying relative proportions in a visually intuitive way."
         </script>
     
     <main class="container mt-5">

@@ -4,7 +4,7 @@
   let description;
 
   description =
-    "A heatmap in data visualization is a graphical representation that uses color to depict the magnitude of values in a matrix. ";
+    "A stacked bar chart is a visual representation of data that uses horizontal or vertical bars to display the composition of a whole, broken down into segments. Each bar is divided into multiple stacked segments, each representing a different category or subcomponent. Stacked bar charts are useful for illustrating the contribution of individual components to the total, allowing for easy comparison of the relative sizes of the segments within each bar.  ";
 </script>
 
 <main class="container mt-5">
@@ -20,7 +20,7 @@
         <div class="col-md-4">
            <div class="textColor">
            <div class="card-body">
-               <h3 class="card-title">PopulationPyramid in Data visualization</h3>
+               <h3 class="card-title">Stacked Bar in Data visualization</h3>
                <p class="card-text">{description}</p>
            </div>
            </div>

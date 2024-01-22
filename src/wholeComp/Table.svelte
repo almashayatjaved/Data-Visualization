@@ -1,11 +1,12 @@
 <script>
   import Table from "../components/table.svelte";
 
+
   let description;
   let textColor = "#7886b2"
 
   description =
-    "Tables in data visualization organize information in a structured grid of rows and columns, making it easy to display and compare data values. They are effective for presenting precise numerical details or categorical information, providing a clear and organized format for analysis. Tables are commonly used in reports and presentations to convey detailed data efficiently, offering a straightforward way to present information without the visual abstraction of charts or graphs.";
+    "Tables in data visualization organize information in a structured grid of rows and columns, making it easy to display and compare data values. They are effective for presenting precise numerical details or categorical information, providing a clear and organized format for analysis. ";
 </script>
 
 <main class="container mt-5">

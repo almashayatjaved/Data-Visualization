@@ -1,18 +1,17 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
-  import TableComponent from "./wholeComp/Table.svelte"
-  import BarComponent from "./wholeComp/Bar.svelte"
-  import HeatMapComponent from "./wholeComp/HeatMap.svelte"
-  import HistogramComponent from "./wholeComp/Histogram.svelte"
-  import PieChartComponent from "./wholeComp/PieChart.svelte"
-  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte"
-  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte"
-  import StackbarComponent from './wholeComp/Stackbar.svelte'
-  import TreeMaapComponent from './wholeComp/TreeMaap.svelte'
+  import TableComponent from "./wholeComp/Table.svelte";
+  import BarComponent from "./wholeComp/Bar.svelte";
+  import HeatMapComponent from "./wholeComp/HeatMap.svelte";
+  import HistogramComponent from "./wholeComp/Histogram.svelte";
+  import PieChartComponent from "./wholeComp/PieChart.svelte";
+  import PopulationPyramidComponent from "./wholeComp/PopulationPyramid.svelte";
+  import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte";
+  import StackbarComponent from "./wholeComp/Stackbar.svelte";
+  import TreeMaapComponent from "./wholeComp/TreeMaap.svelte";
+  import VerticalPyramidComponent from "./wholeComp/VerticalPyramid.svelte";
 
   import { Link } from "svelte-routing";
-  import Stackbar from "./components/stackbar.svelte";
-
 
   let navigationLinks = [
     { text: "Go to Bar", link: "/bar" },
@@ -29,44 +28,41 @@
 </script>
 
 <main class="text-center">
-  <div class="navbar bg-[#1a9496] border rounded" style="height: 10vh;">
+  <div
+    class="navbar bg-[#1a9496] text-505F98 border rounded"
+    style="height: 10vh;"
+  >
     {#each navigationLinks as { text, link }}
       <Link
         to={link}
-        class="text-light nav-link"
+        class="nav-link"
         style="font-weight:bold; margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;"
         >{text}</Link
       >
     {/each}
   </div>
-  <div style="height: 75vh; background-color:#20354c" class="witw-100 d-flex">
+  <div style="height: 75vh;" class="witw-100 d-flex home">
     <div
-      class=" w-50 d-flex flex-column align-items-center justify-content-center"
+      class="w-60 lh-lg d-flex text-light flex-column align-items-center justify-content-center"
     >
-      <!-- svelte-ignore a11y-img-redundant-alt -->
-      <img
-        src="/images/23.jpg"
-        class=" rounded-circle"
-        style="height: 60%; width: 45%"
-        alt="my image"
-      />
-    </div>
-    <div
-      class="w-50 d-flex text-light flex-column align-items-center justify-content-center"
-    >
-      <h1 class="font-sans-serif text-light fs-3" style="font-weight:bold">
-        Meet Almas Javed
-      </h1>
-      <p class="w-50">
-        Passionate about transforming complex datasets into compelling visual
-        narratives. Armed with expertise in
-        data analysis and visualization tools, I bring data to life, making it
-        accessible and insightful for a wide audience.
-      </p>
+      <div class="d-flex flex-column align-items-start w-50 border ">
+        <h1 class="font-sans-serif text-28267d fs-3" style="font-weight:bold">
+          Meet Almas Javed
+        </h1>
+        <p class="w-50 text-start">
+          Passionate about transforming complex datasets into compelling visual
+          narratives. Armed with expertise in data analysis and visualization
+          tools, I bring data to life, making it accessible and insightful for a
+          wide audience.
+        </p>
+        <button class="border border-0 text-light bg-fffff px-3"
+          >Check out Data Visualisation</button
+        >
+      </div>
     </div>
   </div>
   <div class="background p-5">
-    <TableComponent/>
+    <TableComponent />
   </div>
   <div>
     <BarComponent />
@@ -80,6 +76,9 @@
   <div>
     <PieChartComponent />
   </div>
+  <!-- <div>
+    <VerticalPyramidComponent />
+  </div> -->
   <div>
     <PopulationPyramidComponent />
   </div>
@@ -137,11 +136,21 @@
     /* margin: 0 auto; */
   }
 
+  main .home {
+    background-image: url("/images/designer_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   h1 {
-    color: #ff3e00;
+    color: #091133;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
+  }
+  p {
+    color: #505f98;
   }
 
   svg {
@@ -150,11 +159,14 @@
     height: 30vh;
   }
   .navbar {
-    background-color: #1a9496; /* Light Purple background */
+    /* background-color: #1a9496;  */
     padding: 20px;
     text-align: center;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  button {
+    background-color: #141719;
   }
   footer {
     background-color: #f8f9fa; /* Light background color */

@@ -4,7 +4,7 @@
     let description;
   
     description =
-      "A heatmap in data visualization is a graphical representation that uses color to depict the magnitude of values in a matrix. ";
+      " A treemap is a visualization technique that represents hierarchical data as nested rectangles within a larger rectangle. Each branch of the hierarchy is assigned a colored rectangle, and the size of each rectangle corresponds to a quantitative value, such as the proportion of a total.  ";
   </script>
   
   <main class="container mt-5">
@@ -13,7 +13,7 @@
           <div class="col-md-6">
               <div class="textColor">
                   <div class="card-body">
-                      <h3 class="card-title">PopulationPyramid in Data visualization</h3>
+                      <h3 class="card-title">TreeMap in Data visualization</h3>
                       <p class="card-text">{description}</p>
                     </div>
                 </div>
