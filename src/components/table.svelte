@@ -68,6 +68,7 @@
     /* border-collapse: collapse; */
     width: 100%;
     border: none;
+    color: #8090c4;
   }
 
   th,
@@ -79,6 +80,7 @@
 
   th {
     background-color: #8c8c8c;
+    color: rgb(59, 57, 57);
   }
   tbody {
     background-color: #e5e5e5;

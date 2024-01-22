@@ -3,7 +3,7 @@
     
       let description;
     
-      description ="A heatmap in data visualization is a graphical representation that uses color to depict the magnitude of values in a matrix. Typically, rows and columns represent variables, and the intensity of color at each intersection indicates the corresponding value's magnitude. Heatmaps are effective for highlighting patterns, trends, or variations in large datasets, making them particularly useful for visualizing relationships and identifying clusters of high or low values. This visual technique is commonly employed in areas such as data analysis, biology, and finance to provide a quick and intuitive overview of complex information."
+      description ="A heatmap in data visualization is a graphical representation that uses color to depict the magnitude of values in a matrix. Typically, rows and columns represent variables, and the intensity of color at each intersection indicates the corresponding value's magnitude. "
         
         </script>
     

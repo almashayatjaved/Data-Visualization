@@ -29,32 +29,21 @@
 </script>
 
 <main class="text-center">
-  <div class="navbar bg-[#1a9496] border rounded" style="height: 10vh;">
+  <div class="navbar bg-[#1a9496] text-505F98  border rounded" style="height: 10vh;">
     {#each navigationLinks as { text, link }}
       <Link
         to={link}
-        class="text-light nav-link"
+        class="nav-link"
         style="font-weight:bold; margin: 0 15px;font-size: 18px; transition: color 0.3s ease-in-out; text-decoration: none;"
         >{text}</Link
       >
     {/each}
   </div>
-  <div style="height: 75vh; background-color:#20354c" class="witw-100 d-flex">
+  <div style="height: 75vh;" class="witw-100 d-flex home">
     <div
-      class=" w-50 d-flex flex-column align-items-center justify-content-center"
+      class="w-60 lh-lg d-flex text-light flex-column align-items-center justify-content-center"
     >
-      <!-- svelte-ignore a11y-img-redundant-alt -->
-      <img
-        src="/images/23.jpg"
-        class=" rounded-circle"
-        style="height: 60%; width: 45%"
-        alt="my image"
-      />
-    </div>
-    <div
-      class="w-50 d-flex text-light flex-column align-items-center justify-content-center"
-    >
-      <h1 class="font-sans-serif text-light fs-3" style="font-weight:bold">
+      <h1 class="font-sans-serif text-28267d fs-3" style="font-weight:bold">
         Meet Almas Javed
       </h1>
       <p class="w-50">
@@ -80,6 +69,9 @@
   <div>
     <PieChartComponent />
   </div>
+  <!-- <div>
+    <VerticalPyramidComponent />
+  </div> -->
   <div>
     <PopulationPyramidComponent />
   </div>
@@ -91,9 +83,6 @@
   </div>
   <div>
     <TreeMaapComponent />
-  </div>
-  <div>
-    <VerticalPyramidComponent />sadsad
   </div>
   <footer class="text-center">
     <div class="container footer-content">
@@ -139,12 +128,22 @@
     max-width: 100%;
     /* margin: 0 auto; */
   }
+  
+  main .home{
+    background-image: url("/images/designer_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 
   h1 {
-    color: #ff3e00;
+    color: #091133;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
+  }
+  p{
+    color: #505F98;
   }
 
   svg {
@@ -153,7 +152,7 @@
     height: 30vh;
   }
   .navbar {
-    background-color: #1a9496; /* Light Purple background */
+    /* background-color: #1a9496;  */
     padding: 20px;
     text-align: center;
     width: 100%;
