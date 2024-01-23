@@ -68,7 +68,7 @@
     /* border-collapse: collapse; */
     width: 100%;
     border: none;
-    color: #8090c4;
+    color: #28267d;
   }
 
   th,

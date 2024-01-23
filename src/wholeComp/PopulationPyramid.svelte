@@ -31,8 +31,12 @@
     </main>
     
     <style>
-           .textColor{
-    color:#8090c4
+
+  h3{
+    color: #28267d;
+  }
+  p{
+    color: #505f98;
   }
     </style>
     
