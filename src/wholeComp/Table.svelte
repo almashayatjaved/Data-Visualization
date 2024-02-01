@@ -10,11 +10,11 @@
 </script>
 
 <main class="container mt-5">
-  <div class="row d-flex flex-row  justify-content-center align-items-center">
+  <div class=" row d-flex flex-row  justify-content-center align-items-center">
     <!-- Left section for description -->
-    <div class="col-md-5 ">
-      <div class="card background border-0 textColor">
-        <div class="card-body">
+    <div class="col-md-6" >
+      <div class="card background" style="width: 70%;">
+        <div class="card-body text-start">
           <h3 class="card-title">Table in Data visualization</h3>
           <p class="card-text">{description}</p>
         </div>
@@ -22,7 +22,7 @@
     </div>
 
     <!-- Right section for image -->
-    <div class="col-md-7">
+    <div class="col-md-6">
       <div class="">
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <!-- <img src="/images/table.png" class="card-img-top" alt="Image" /> -->
@@ -36,7 +36,14 @@
   /* .background {
     background-color: #06133d;
   } */
-  .textColor{
-    color:#8090c4
+  .container{
+    max-width: fit-content;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  h3{
+    color: #28267d;
+  }
+  p{
+    color: #505f98;
   }
 </style>

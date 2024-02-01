@@ -45,7 +45,7 @@
     <div
       class="w-60 lh-lg d-flex text-light flex-column align-items-center justify-content-center"
     >
-      <div class="d-flex flex-column align-items-start w-50 border ">
+      <div class="d-flex flex-column align-items-start w-50 ">
         <h1 class="font-sans-serif text-28267d fs-3" style="font-weight:bold">
           Meet Almas Javed
         </h1>
@@ -55,7 +55,7 @@
           tools, I bring data to life, making it accessible and insightful for a
           wide audience.
         </p>
-        <button class="border border-0 text-light bg-fffff px-3"
+        <button class="border border-0 text-light px-3" 
           >Check out Data Visualisation</button
         >
       </div>
@@ -90,6 +90,15 @@
   </div>
   <div>
     <TreeMaapComponent />
+  </div>
+  <div class="learn d-flex flex-column justify-content-center align-items-center " style="height: 80vh;">
+    <div class="w-40">
+        <h1 class="child">Where to find Course</h1>
+        <p class="child">You can visit coursera for free course and learn Data visualization wit svelte. Also, there are alot of documentation and the whole entire community for Data visualization in svelte.</p>
+        <h1 class="child">Free of cost</h1>
+        <h3 class="child"> Go for it...</h3>
+        <button class="child border border-0 text-light px-3">Visit Coursera</button>
+    </div>
   </div>
   <footer class="text-center">
     <div class="container footer-content">
@@ -146,8 +155,11 @@
   h1 {
     color: #091133;
     text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+    font-size: 2em;
+    font-weight: 500;
+  } 
+  h3{
+    color: #091133;
   }
   p {
     color: #505f98;
@@ -167,6 +179,15 @@
   }
   button {
     background-color: #141719;
+  }
+  .learn{
+    background-image: url("/images/Rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .child{
+    margin-top: 10px;
   }
   footer {
     background-color: #f8f9fa; /* Light background color */
