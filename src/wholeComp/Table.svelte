@@ -13,7 +13,7 @@
   <div class=" row d-flex flex-row  justify-content-center align-items-center">
     <!-- Left section for description -->
     <div class="col-md-6" >
-      <div class="card background" style="width: 70%;">
+      <div class="background" style="width: 70%;">
         <div class="card-body text-start">
           <h3 class="card-title">Table in Data visualization</h3>
           <p class="card-text">{description}</p>

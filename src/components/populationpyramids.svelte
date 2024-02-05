@@ -47,7 +47,7 @@
         .attr('y', d => yScale(d.age))
         .attr('width', d => xScale(d.male))
         .attr('height', yScale.bandwidth())
-        .style('fill', 'blue');
+        .style('fill', 'steelblue');
   
       // Draw rectangles for female population
       svg.selectAll('.female')
