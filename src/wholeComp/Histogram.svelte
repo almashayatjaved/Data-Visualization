@@ -20,8 +20,8 @@
         <div class="col-md-4">
             <div class="textColor">
                 <div class="card-body">
-                    <h3 class="card-title">Histogram in Data visualization</h3>
-                    <p class="card-text">{description}</p>
+                  <h3 class="card-title text-start my-4">Histogram in Data visualization</h3>
+                  <p class="card-text text-start">{description}</p>
                   </div>
               </div>
           </div>

@@ -15,8 +15,8 @@
     <div class="col-md-6" >
       <div class="background" style="width: 70%;">
         <div class="card-body text-start">
-          <h3 class="card-title">Table in Data visualization</h3>
-          <p class="card-text">{description}</p>
+          <h3 class="card-title text-start my-4">Table in Data visualization</h3>
+            <p class="card-text text-start">{description}</p>
         </div>
       </div>
     </div>

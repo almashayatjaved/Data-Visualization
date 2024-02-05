@@ -4,10 +4,10 @@
   let description;
 
   description =
-    "A stacked bar chart is a visual representation of data that uses horizontal or vertical bars to display the composition of a whole, broken down into segments. Each bar is divided into multiple stacked segments, each representing a different category or subcomponent. Stacked bar charts are useful for illustrating the contribution of individual components to the total, allowing for easy comparison of the relative sizes of the segments within each bar.  ";
-</script>
+    "A stacked bar chart is a visual representation of data that uses horizontal or vertical bars to display the composition of a whole, broken down into segments."
+    </script>
 
-<main class="container mt-5">
+    <main class="container mt-5">
     <div class="row d-flex flex-row justify-content-center align-items-center">
         <div class="col-md-8">
             <div class="">
@@ -20,8 +20,8 @@
         <div class="col-md-4">
            <div class="textColor">
            <div class="card-body">
-               <h3 class="card-title">Stacked Bar in Data visualization</h3>
-               <p class="card-text">{description}</p>
+            <h3 class="card-title text-start my-4">StackBar in Data visualization</h3>
+            <p class="card-text text-start">{description}</p>
            </div>
            </div>
         </div>
