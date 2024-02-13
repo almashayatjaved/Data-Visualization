@@ -30,9 +30,7 @@
     </main>
     
     <style>
-                .textColor{
-    color:#8090c4
-  }
+
   h3{
     color: #28267d;
   }

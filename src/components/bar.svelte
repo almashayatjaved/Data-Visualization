@@ -30,7 +30,7 @@
             >{department.departmentName}</text
           >
           <text dominant-baseline="start" y="20" style="fill: #28267d;" x={department.faculty + 60}
-            >{department.faculty} Members</text
+            >{department.faculty}</text
           >
         </g>
       {/each}
