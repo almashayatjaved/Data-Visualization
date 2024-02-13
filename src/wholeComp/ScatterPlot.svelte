@@ -3,7 +3,7 @@
     
       let description;
     
-      description ="A scatterplot is a visual representation of data points in a Cartesian coordinate system, where each point represents the values of two variables. The position of the points on the graph helps identify patterns, correlations, or trends between the variables, providing insights into their relationship. Scatterplots are widely used in statistical analysis and data visualization."
+      description ="A scatterplot is a visual representation of data points in a Cartesian coordinate system, where each point represents the values of two variables. The position of the points on the graph helps identify patterns, correlations, or trends between the variables, providing insights into their relationship."
         </script>
     
     <main class="container mt-5">
@@ -13,8 +13,8 @@
         <div class="col-md-4">
             <div class="textColor">
                 <div class="card-body">
-                    <h3 class="card-title">ScatterPlot in Data visualization</h3>
-                    <p class="card-text">{description}</p>
+                  <h3 class="card-title text-start my-4">ScatterPlot in Data visualization</h3>
+                  <p class="card-text text-start">{description}</p>
                 </div>
             </div>
         </div>
