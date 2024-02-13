@@ -7,7 +7,7 @@ import VerticalPyramid from "../components/verticalpyramids.svelte"
   <div class="row d-flex flex-row justify-content-center align-items-center">
           
     <div class="col-md-6">
-        <div class="textColor">
+        <div class="textColor"> 
             <div class="card-body">
                 <h3 class="card-title">Heading</h3>
               </div>
@@ -24,5 +24,5 @@ import VerticalPyramid from "../components/verticalpyramids.svelte"
 </main>
 
 <style>
-
+  
 </style>
