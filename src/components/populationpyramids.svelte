@@ -60,20 +60,7 @@
       .attr('width', d => xScale(d.female))
       .attr('height', yScale.bandwidth())
       .style('fill', 'pink');
-      
-      // Add labels for female population
-      svg.selectAll('.femaleLabel')
-        .data(data)
-        .enter()
-        .append('text')
-        .attr('class', 'femaleLabel')
-        .attr('x', d => xScale(-d.female))
-        .attr('y', d => yScale(d.age) + yScale.bandwidth() / 2)
-        .attr('dx', -5)
-        .attr('dy', '0.35em')
-        .style('fill', 'pink')
-        .style('text-anchor', 'end')
-        .text(d => d.female);
+
     // Add labels for male population
     svg.selectAll('.maleLabel')
       .data(data)
@@ -87,6 +74,19 @@
       .style('fill', 'blue')
       .text(d => d.male);
 
+    // Add labels for female population
+    svg.selectAll('.femaleLabel')
+      .data(data)
+      .enter()
+      .append('text')
+      .attr('class', 'femaleLabel')
+      .attr('x', d => xScale(-d.female))
+      .attr('y', d => yScale(d.age) + yScale.bandwidth() / 2)
+      .attr('dx', -5)
+      .attr('dy', '0.35em')
+      .style('fill', 'pink')
+      .style('text-anchor', 'end')
+      .text(d => d.female);
   });
 </script>
 

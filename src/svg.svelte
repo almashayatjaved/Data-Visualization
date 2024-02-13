@@ -91,9 +91,9 @@
   <div>
     <TreeMaapComponent />
   </div>
-  <div
+  <!-- <div
     class="learn d-flex flex-column justify-content-center align-items-center"
-    style="height: 80vh;"
+    style="height: 30vh;"
   >
     <div class="w-40 d-flex justify-content-around  w-100">
       <div class=" w-50 d-flex justify-content-center">
@@ -114,7 +114,7 @@
         >
       </div>
     </div>
-  </div>
+  </div> -->
   <footer class="text-center">
     <div class="container footer-content">
       <div class="row">
@@ -170,7 +170,7 @@
   h1 {
     color: #091133;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
   }
   h3 {
