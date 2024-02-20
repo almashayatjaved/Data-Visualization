@@ -9,6 +9,7 @@
   import ScatterplotComponent from "./wholeComp/ScatterPlot.svelte";
   import StackbarComponent from "./wholeComp/Stackbar.svelte";
   import TreeMaapComponent from "./wholeComp/TreeMaap.svelte";
+  import PercentageRatioChart from "./components/percentageRatioChart.svelte";
   import VerticalPyramidComponent from "./wholeComp/VerticalPyramid.svelte";
 
   import { Link } from "svelte-routing";
@@ -90,6 +91,9 @@
   </div>
   <div>
     <TreeMaapComponent />
+  </div>
+  <div>
+    <PercentageRatioChart />
   </div>
   <!-- <div
     class="learn d-flex flex-column justify-content-center align-items-center"
