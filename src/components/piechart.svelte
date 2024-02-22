@@ -1,5 +1,4 @@
 <script>
-    import { Link } from "svelte-routing"
     import { onMount } from 'svelte';
     import Chart from 'chart.js/auto';
   

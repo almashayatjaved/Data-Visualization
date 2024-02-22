@@ -1,6 +1,5 @@
 <script>
   import Heatmap from "../components/heatmap.svelte";
-    import HeatMap from "../components/heatmap.svelte";
   
     let description;
   
