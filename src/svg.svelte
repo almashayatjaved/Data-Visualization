@@ -11,6 +11,7 @@
   import TreeMaapComponent from "./wholeComp/TreeMaap.svelte";
   import PercentageRatioChart from "./components/percentageRatioChart.svelte";
   import VerticalPyramidComponent from "./wholeComp/VerticalPyramid.svelte";
+  import RadiantPercentageRAtio from "./components/radiantPercentageRatio.svelte"
 
   import { Link } from "svelte-routing";
 
@@ -94,6 +95,9 @@
   </div>
   <div>
     <PercentageRatioChart />
+  </div>
+  <div>
+    <RadiantPercentageRAtio />
   </div>
   <!-- <div
     class="learn d-flex flex-column justify-content-center align-items-center"

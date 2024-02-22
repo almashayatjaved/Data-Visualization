@@ -20,7 +20,7 @@
       },
     ],
   };
-
+  
   onMount(() => {
     const ctx = document.getElementById("myChart").getContext("2d");
     chart = new Chart(ctx, {
@@ -30,6 +30,7 @@
         cutout: "50%", // Half of the radius will be used as the cutout radius
         rotation: -0.5 * Math.PI, // Starts at the top (12 o'clock position)
         // circumference: 1.5 * Math.PI, // Makes the chart go only three-quarters of the way around
+        
         animation: {
           duration: 2000, // Animation duration in milliseconds
           easing: "easeInOutQuart", // Easing function for the animation
@@ -84,3 +85,4 @@
     margin: 0 auto;
   }
 </style>
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
